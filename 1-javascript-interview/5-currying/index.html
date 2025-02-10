@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closures</title>
+</head>
+<body>
+  <h1>(Notes) Currying</h1>
+  <h2>Question 1: Currying</h2>
+  <p>Explanation: Currying is a technique in functional programming where a function with multiple arguments is transformed into a sequence of functions, each taking a single argument. This improves composability and allows partial application of functions.</p>
+
+  <h2>Question 2: sum(2)(6)(1)</h2>
+  <p>Explanation: This function demonstrates currying by taking three separate arguments and adding them together in a sequence using nested functions.</p>
+
+  <h2>Question 4: Write a currying function evaluate("sum")(4)(2)</h2>
+  <p>Explanation: This question showcases a curried function evaluate that takes an operation string and two numbers, then performs the corresponding operation (sum, multiply, divide, subtract) based on the string input.</p>
+
+  <h2>Question 5: Infinite Currying -> sum(1)(2)(3)....(n)</h2>
+  <p>Explanation: This example illustrates how currying can be used recursively to handle an indefinite number of arguments, continually adding them together until a termination condition is met.</p>
+
+  <h2>Question 6: Currying vs Partial Application</h2>
+  <p>Explanation: This question compares currying and partial application, showing how currying allows for creating reusable functions with specific arguments filled in, while partial application involves pre-filling some arguments and leaving others for later.</p>
+
+  <h2>Question 7: Real-world example of currying => Manipulating DOM</h2>
+  <p>Explanation: In this example, currying is used to create a function that updates the text content of an HTML element identified by its ID. This showcases a practical application of currying in web development for DOM manipulation.</p>
+
+  <h2>Question 8: Curry() implementation</h2>
+  <p>Explanation: This code snippet demonstrates a custom implementation of the curry function, which transforms a multi-argument function into a curried function, enabling partial application and composability. It's applied to a simple sum function for demonstration.</p>
+  <script src="index.js"></script>
+</body>
+</html>
