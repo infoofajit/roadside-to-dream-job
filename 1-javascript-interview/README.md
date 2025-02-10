@@ -1,6 +1,6 @@
 # frontend-interview-preparation-course
 
-## [1. Var, Let and Const] (https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
+## [1. Var, Let and Const](https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
 - Variable Shadowing
 - Illegal Shadowing
 - Hoisting
@@ -8,7 +8,7 @@
 
 ---
 
-## [2. Map, filter and reduce] (https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
+## [2. Map, filter and reduce](https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
 - Question 1: Array.map()
 - Question 1: Array.map()
 - Question 2: Array.filter()
@@ -20,7 +20,7 @@
 
 --
 
-## [3. Functions] (https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
+## [3. Functions](https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
 - Question 1: Function Code
 - Question 2: What is IIFE?
 - Question 3: Closure
@@ -32,7 +32,7 @@
 - Question 9: Arrow functions
 - Question 10: this
 
-## [4. Closures] (https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
+## [4. Closures](https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
 - Question 1: What is Lexical Scope?
 - Question 2: How does Closure work?
 - Question 3: Explain Closure Scope Chain.
@@ -46,7 +46,7 @@
 - Question 11: What is Memoize Polyfill, and how does it use closure?
 - Question 12: Differentiate between Closure and Scope.
 
-## [5. Currying] (https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
+## [5. Currying](https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
 - Question 1: Currying
 - Question 2: sum(2)(6)(1)
 - Question 4: Write a currying function evaluate("sum")(4)(2)
