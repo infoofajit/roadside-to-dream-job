@@ -18,7 +18,7 @@
 - Question 6: Reduce Polyfill
 - Question 7: map vs foreach
 
---
+---
 
 ## [3. Functions](https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
 - Question 1: Function Code
@@ -31,6 +31,8 @@
 - Question 8: Callback
 - Question 9: Arrow functions
 - Question 10: this
+
+---
 
 ## [4. Closures](https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
 - Question 1: What is Lexical Scope?
@@ -46,6 +48,8 @@
 - Question 11: What is Memoize Polyfill, and how does it use closure?
 - Question 12: Differentiate between Closure and Scope.
 
+---
+
 ## [5. Currying](https://github.com/infoofajit/roadside-to-dream-job/tree/master/1-javascript-interview/1-var-let-const)
 - Question 1: Currying
 - Question 2: sum(2)(6)(1)
@@ -54,3 +58,6 @@
 - Question 6: Currying vs Partial Application
 - Question 7: Real-world example of currying => Manipulating DOM
 - Question 8: Curry() implementation
+
+---
+
