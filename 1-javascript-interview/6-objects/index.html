@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closures</title>
+</head>
+<body>
+  <h1>(Notes) Objects</h1>
+  <h2>Question 1: Delete keyword in Object</h2>
+  <p>Explanation: The code uses the delete keyword to delete a property from an object, but since the property is immediately returned afterward, the delete operation has no effect, and the property still exists in the object.</p>
+
+  <p>
+    Computed Properties
+    Explanation: Computed properties allow for dynamic property names in object literals, using expressions inside square brackets. This feature is useful for creating object properties based on variable values or expressions.
+  </p>
+
+  <p>
+    Looping in Object
+    Explanation: The for...in loop in JavaScript iterates over all enumerable properties of an object, allowing access to both keys and values, which can be useful for various operations involving objects.
+  </p>
+
+  <h2>Question 2: Output</h2>
+  <p>Explanation: The code attempts to create an object with duplicate keys (a). In JavaScript, object keys are unique, so when a key is repeated, the last occurrence overwrites the earlier ones. Therefore, console.log(obj); will output { a: 'three', b: 'two' }.</p>
+
+  <h2>Question 3: Create a function multiplyByTwo(obj)</h2>
+  <p>Explanation: The function multiplyByTwo(obj) multiplies all numeric property values of the provided object obj by 2, using a for...in loop to iterate over the object's properties and check for numeric values.</p>
+
+  <h2>Question 4: Output (Important)</h2>
+  <p>Explanation: JavaScript automatically converts object keys to strings. In this code, both b and c are converted to [object Object] (string representation of an object), so a[b] and a[c] refer to the same property. The final value is 456.</p>
+
+  <h2>Question 5: JSON.Stringify and JSON.parse</h2>
+  <p>Explanation: JSON.stringify converts a JavaScript object to a JSON string, while JSON.parse converts a JSON string back to a JavaScript object. These methods are commonly used for data serialization and deserialization.</p>
+
+  <h2>Question 6: Output</h2>
+  <p>Explanation: The spread operator (...) in an array literal spreads the characters of the string "Lydia" into individual array elements, resulting in ['L', 'y', 'd', 'i', 'a'] when logged to the console.</p>
+
+  <h2>Question 7: Output</h2>
+  <p>Explanation: The spread operator (...) in object literals spreads the properties of one object into another, creating a new object with combined properties. The output will be { name: 'Lydia', age: 21, admin: true }.</p>
+
+  <h2>Question 8: Output</h2>
+  <p>Explanation: JSON.stringify can take an array of properties to include in the JSON string. In this case, only the properties 'level' and 'health' will be included in the output.</p>
+
+  <h2>Question 9: Output</h2>
+  <p>Explanation: The perimeter method uses an arrow function (() =>) that doesn't have its own this context, leading to this.radius being undefined and resulting in NaN (Not a Number) when called.</p>
+
+  Destructuring in object
+  Explanation: Destructuring allows extracting specific properties from an object. In this code, const { fullName: { firstName } } = user; extracts the firstName property from user.fullName.
+
+  <h2>Question 11: Output</h2>
+  <p>Explanation: The function getItems has a syntax error because the rest parameter (...args) should be the last parameter in the function's parameter list. It will throw a syntax error when executed.</p>
+
+  <h2>Question 12: Output</h2>
+  <p>Explanation: Objects in JavaScript are assigned by reference, so changing c.greeting also changes d.greeting since d references the same object as c.</p>
+
+  <h2>Question 13: Output</h2>
+  <p>Explanation: In JavaScript, objects are compared by reference, so {a:1} == {a:1} and {a:1} === {a:1} will both return false since they are separate objects in memory.</p>
+
+  <h2>Question 14: Output</h2>
+  <p>Explanation: Arrays and objects are reference types in JavaScript, so setting person to null does not affect the reference stored in members, resulting in the original object being logged.</p>
+
+  <h2>Question 15: Output</h2>
+  <p>Explanation: The multiply function doubles the number property of the passed object. When called without arguments, it uses a default object { ...value }, which leads to doubling the value each time it's called.</p>
+  <script src="index.js"></script>
+</body>
+</html>

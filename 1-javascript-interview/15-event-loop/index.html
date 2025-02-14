@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Loop</title>
+</head>
+<body>
+  <h1>(Notes) Event Loop</h1>
+  <h2>Ques 1 - What is Event Loop?</h2>
+  <p>Explanation: The Event Loop in JavaScript is a mechanism responsible for managing asynchronous behavior in a single-threaded environment. It acts like a traffic controller, ensuring tasks are executed in an orderly manner by processing pending tasks in queues (microtasks and macrotasks).</p>
+
+  <h2>Ques 2 - Why do we need the event loop to manage these task queue and microtask queue?</h2>
+  <p>Explanation: The event loop is necessary to handle asynchronous operations in JavaScript effectively. It manages task queues and microtask queues to ensure that tasks are executed efficiently without blocking the main thread.</p>
+
+  <h2>Ques 3 - What is the output?</h2>
+  <p>
+    Explanation: The output will be:
+    <pre>
+      Start
+      running..
+      End
+    </pre>
+
+    This is because the blockMainThread() function blocks the main thread for approximately 3 seconds before logging "running.." and then "End" sequentially.
+  </p>
+
+  <h2>Ques 4 - What is the output?</h2>
+  <p>Explanation: The output will be:</p>
+
+  <pre>
+    d Runs
+    c
+    b
+    a
+  </pre>
+
+  <p>This is because the function d() is executed synchronously, while the setTimeout functions are added to the task queue and executed in the order of their specified timeouts.</p>
+
+  <h2>Ques 5 - What's the output?</h2>
+  <p>Explanation: The output will be:</p>
+
+  <pre>
+    2
+    2
+    2
+  </pre>
+
+  <p>This happens because in both versions of the a() function, the setTimeout functions capture the final value of i (which is 3 after the loop completes) due to closure, resulting in all three console.log(i) statements logging 2 after waiting for their respective timeouts.</p>
+
+  <h2>Ques 6 - What's the Output?</h2>
+  <p>Explanation: The output will be:</p>
+
+  <pre>
+    e Runs
+    b Runs
+    c Runs
+    d Runs
+  </pre>
+
+  <p>This occurs because promises and their respective then handlers are executed as microtasks, following the microtask queue's order, and then the setTimeout callback runs as a macrotask after the microtasks are completed.</p>
+
+  <h2>Ques 7 - What's the Output?</h2>
+  <p>Explanation: The output will be:</p>
+
+  <pre>
+    Start
+    resolved: 1.3
+  </pre>
+
+  <p>This happens because the pause function returns a promise that resolves after 1000 milliseconds, and the then handler calculates the time difference between the start and end times, logging "resolved: 1.3" after approximately 1.3 seconds.</p>
+
+  <script src="index.js"></script>
+</body>
+</html>
